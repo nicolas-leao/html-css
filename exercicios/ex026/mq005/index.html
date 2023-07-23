@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Meu site</h1>
-        <menu>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -21,11 +23,20 @@
     </header>
     <main>
         <article>
-            <h2>Testando media query</h2>
+            <h2>Testando Media Queries</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam optio ut accusantium, odio fuga as eos inventore quod voluptas velit cum nulla. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, fugit nemo quod laudantium quo facilis dignissimos magni, voluptatem autem optio cupiditate repellendus similique amet, non incidunt blanditiis? Mollitia, nihil quidem.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt totam et nam molestiae. Corporis neque nisi distinctio eum recusandae magni perspiciatis quo rerum molestias aut, fuga numquam placeat sapiente. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab tenetur natus non libero vitae dicta pariatur soluta odio doloribus, repellendus enim magnam consequuntur, repudiandae necessitatibus, quam perspiciatis dolorem fugit similique.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum alias asperiores rem quibusdam illum. Tenetur nesciunt repellendus quo accusantium consequatur. Ad rerum, accusantium debitis pariatur iste quos sequi architecto perspiciatis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, distinctio! Porro, molestiae modi. Sunt consectetur numquam, eos iure amet atque ratione laboriosam dignissimos voluptatem nobis, repudiandae assumenda illum, sequi similique!</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display ='block'
+            }
+        }
+    </script>
 </body>
 </html>
