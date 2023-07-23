@@ -42,7 +42,7 @@ img#tv{display: none;}
         background-image: url(../imagens/back-tablet.jpg);
     }
 
-    img#phone{display: none;}
+img#phone{display: none;}
 img#tablet{display: block;}
 img#print{display: none;}
 img#pc{display: none;}
